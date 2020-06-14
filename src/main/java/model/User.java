@@ -15,7 +15,7 @@ import java.util.List;
 @Setter
 public class User {
     @Id
-    Integer userId;
+    Long userId;
     String firstName;
     String lastName;
     @OneToMany(mappedBy = "users")

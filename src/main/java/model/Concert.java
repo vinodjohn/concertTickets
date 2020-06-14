@@ -13,7 +13,7 @@ import javax.persistence.Table;
 @Setter
 public class Concert {
     @Id
-    Integer concertId;
+    Long concertId;
 //i will think relational
     String genre; // we can use enum
     String SingerName;

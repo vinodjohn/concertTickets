@@ -14,7 +14,7 @@ import java.util.Date;
 @Setter
 public class Schedule {
     @Id
-    Integer scheduleId;
+    Long scheduleId;
     Date startTime;
     Concert concert;
 

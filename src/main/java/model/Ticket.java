@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 
 @Entity
 @Table(name = "tickets")
@@ -11,11 +12,11 @@ import javax.persistence.*;
 @Setter
 public class Ticket {
     @Id
-    Integer ticketId;
+    Long ticketId;
 // i will think relational
-    Integer scheduleId;
-    Double price;
-    Integer ticketNumber;
+    int scheduleId;
+    BigDecimal price;
+    int ticketNumber;
 
 
 

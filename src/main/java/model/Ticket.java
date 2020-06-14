@@ -7,18 +7,12 @@ import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
-@Table(name = "tickets")
-@Getter
-@Setter
+@Data
 public class Ticket {
     @Id
+    @GeneratedValue(GenerationType.AUTO)
     Long ticketId;
     int scheduleId;
     int ticketNumber;
-    @ManyToOne
-    @JoinColumn(name = "ticketCategoryId")
     TicketCategory ticketCategory;
-
-
-
 }

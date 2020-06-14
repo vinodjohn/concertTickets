@@ -3,7 +3,7 @@ package utils;
 import model.Concert;
 import model.Schedule;
 import model.Ticket;
-import model.User;
+import model.Audience;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
@@ -32,7 +32,7 @@ public class HibernateUtils {
                         "org.hibernate.dialect.MySQL5Dialect");
                 settings.put(Environment.SHOW_SQL, "false");
                 configuration.setProperties(settings);
-                configuration.addAnnotatedClass(User.class);
+                configuration.addAnnotatedClass(Audience.class);
                 configuration.addAnnotatedClass(Ticket.class);
                 configuration.addAnnotatedClass(Schedule.class);
                 configuration.addAnnotatedClass(Concert.class);

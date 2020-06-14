@@ -13,10 +13,11 @@ import java.math.BigDecimal;
 public class Ticket {
     @Id
     Long ticketId;
-// i will think relational
     int scheduleId;
-    BigDecimal price;
     int ticketNumber;
+    @ManyToOne
+    @JoinColumn(name = "ticketCategoryId")
+    TicketCategory ticketCategory;
 
 
 

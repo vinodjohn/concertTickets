@@ -10,14 +10,14 @@ import javax.persistence.Table;
 import java.util.List;
 
 @Entity
-@Table(name = "users")
+@Table(name = "audience")
 @Getter
 @Setter
-public class User {
+public class Audience {
     @Id
-    Long userId;
+    Long audienceId;
     String firstName;
     String lastName;
-    @OneToMany(mappedBy = "users")
+    @OneToMany(mappedBy = "audience")
     List<Ticket> ticketList;
 }

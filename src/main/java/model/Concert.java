@@ -16,5 +16,5 @@ public class Concert {
     Long concertId;
 //i will think relational
     String genre; // we can use enum
-    String SingerName;
+    String singerName;
 }
